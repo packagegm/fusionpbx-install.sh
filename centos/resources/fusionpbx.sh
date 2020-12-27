@@ -37,6 +37,7 @@ chown -R freeswitch:daemon /var/cache/fusionpbx
 
 #get the source code
 git clone $BRANCH https://github.com/fusionpbx/fusionpbx.git /var/www/fusionpbx
+chown -R freeswitch:daemon /var/www/fusionpbx
 
 #send a message
 verbose "FusionPBX Installed"

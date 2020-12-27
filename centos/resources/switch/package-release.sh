@@ -15,11 +15,10 @@ yum -y install memcached curl gdb
 
 #install freeswitch packages
 yum install -y https://files.freeswitch.org/repo/yum/centos-release/freeswitch-release-repo-0-1.noarch.rpm epel-release
-yum install -y freeswitch-config-vanilla \
 # 默认不安装语言与语音包（后期手动安装）
 # freeswitch-lang-* 
 # freeswitch-sounds-* 
-freeswitch-lua freeswitch-xml-cdr
+yum install -y freeswitch-config-vanilla freeswitch-lua freeswitch-xml-cdr
 
 #remove the music package to protect music on hold from package updates
 mkdir -p /usr/share/freeswitch/sounds/temp
